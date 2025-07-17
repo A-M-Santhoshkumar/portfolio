@@ -7,10 +7,10 @@ import ThemeBtn from '../ThemeBtn'
 import Title from "../Title";
 import { Link } from 'react-router-dom';
 
-import image1 from '../../assets/images/Project/business tamizha news blog.png'
+import image1 from '../../assets/images/Project/business_tamizha_news_blog.png'
 import image2 from '../../assets/images/Project/electwin.png'
 import image3 from '../../assets/images/Project/dental.png'
-import image4 from '../../assets/images/Project/bt componey.png'
+import image4 from '../../assets/images/Project/bt_componey.png'
 import image5 from '../../assets/images/Project/velan.png'
 import image6 from '../../assets/images/Project/astro.png'
 

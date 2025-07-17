@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import Resume from "../../assets/resume/Santhoshkumar.pdf";
 import Title from "../Title";
-
+import image1 from 'src/assets/images/main.png'
 
 function HeroSection() {
   const { controls, animationVariants } = useTheme();
@@ -105,7 +105,7 @@ I'm a passionate web developer with experience in WordPress, HTML, CSS, JavaScri
             className="w-full md:w-1/2 flex justify-center md:justify-end"
           >
             <img
-              src="src/assets/images/main.png"
+              src={image1}
               alt="Main"
               className="max-w-full h-auto"
             />

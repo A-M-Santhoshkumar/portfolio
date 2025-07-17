@@ -3,11 +3,16 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Title from "../Components/Title";
 import { useTheme } from "../context/ThemeContext";
+import img1 from '../assets/imagesabout/Front-End.png'
+import img2 from '../assets/images/about/UIUX.png'
+import img3 from '../assets/images/about/Tools.png'
+import img4 from '../assets/images/about/Deployment.png'
+import mainimage from '../assets/images/about/about-me.png' 
 
 const info = [
   {
     name: "🚀 Front-End Development",
-    image: "src/assets/images/about/Front-End.png",
+    image: img1,
     data: [
       "Proficient in JavaScript, with practical experience in React and Tailwind CSS for dynamic and scalable UI development.",
       "Strong foundation in HTML, CSS, and Bootstrap, ensuring responsive and accessible web design across all devices.",
@@ -16,7 +21,7 @@ const info = [
   },
   {
     name: "🎨 UI/UX & Design Implementation",
-    image: "src/assets/images/about/UIUX.png",
+    image: img2,
     data: [
       "Passionate about crafting user-friendly and intuitive interfaces that enhance user experience.",
       "Adept at translating design mockups into high-quality, pixel-perfect code.",
@@ -24,7 +29,7 @@ const info = [
   },
   {
     name: "🛠 Tools & Technologies",
-    image: "src/assets/images/about/Tools.png",
+    image: img3,
     data: [
       "Comfortable working with: PHP (basic), MySQL databases.",
       "Web hosting platforms like GoDaddy and cPanel.",
@@ -33,7 +38,7 @@ const info = [
   },
   {
     name: "🌐 Deployment & Hosting",
-    image: "src/assets/images/about/Deployment.png",
+    image: img4,
     data: [
       "Experienced in deploying React apps to GitHub Pages and cPanel.",
       "Working knowledge of domain management and live production setups.",
@@ -151,7 +156,7 @@ function About() {
             className="text-center md:text-left mb-12 w-full md:w-1/2"
           >
             <img
-              src="src/assets/images/about/about-me.png"
+              src={mainimage}
               alt="about me"
              
             />
