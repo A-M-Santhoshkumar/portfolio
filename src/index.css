@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  p {
+    @apply text-base text-gray-600 dark:text-gray-300 font-openSans;
+  }
+
+  h1 {
+    @apply text-4xl text-dark dark:text-white font-syne;
+  }
+
+  h2 {
+    @apply text-3xl text-dark dark:text-white font-syne;
+  }
+
+  h3 {
+    @apply text-2xl text-dark dark:text-white font-syne;
+  }
+
+  h4 {
+    @apply text-xl text-dark dark:text-white font-syne;
+  }
+
+  h5 {
+    @apply text-lg text-dark dark:text-white font-syne;
+  }
+
+  h6 {
+    @apply text-base text-dark dark:text-white font-syne;
+  }
+}
+
+/* Reusable layout wrapper */
+@layer components {
+  .layout-wrapper {
+    @apply bg-white text-dark dark:bg-[#111] dark:text-white;
+  }
+  /* Dark mode adjustments if needed */
+ 
+  .theme-sk-btn {
+    position: relative;
+    
+    overflow: block;
+  }
+  .theme-sk-btn::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background-image: linear-gradient(329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%);
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+
+  .theme-sk-btn:hover::after {
+    transform: translate(0, 0);
+  }
+
+  .theme-sk-btn:hover .theme-sk-arrow {
+    transform: translateX(8px);
+  }
+
+  .theme-sk-arrow {
+    transform: translate(5px, 0px);
+    transition: transform 0.2s ease-out;
+  }
+
+  .theme-sk {
+    position: relative;
+    display: inline-block;
+  }
+
+  .theme-sk-Hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    transition-delay: 0.4s;
+    z-index: 10;
+  }
+
+  .theme-sk:hover .theme-sk-Hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+}
+
+/* Utility layer */
+@layer utilities {
+  .before-hero-gradient::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    margin-right: 0.5rem;
+    background-image: linear-gradient(329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%);
+    vertical-align: middle;
+  }
+}
+
+/* Font-face declarations */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/Syne/Syne-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Hover animations */
+.animation-move {
+  transform: translate(0, 0);
+  transition: transform 0.2s ease-out;
+}
+
+.animation-bg-move {
+  transform: translate(0, 0);
+  transition: transform 0.2s ease-out;
+  background-image: linear-gradient(329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%);
+  border-radius: 0.5rem;
+}
+
+.group:hover .animation-move {
+  transform: translate(0, -20px);
+}
+
+.group:hover .animation-bg-move {
+  transform: translate(0, -20px);
+}
+
+/* Footer icon hover */
+.icons-fotter-bg:hover,
+.icons-fotter:hover {
+  background-color: #03041C;
+  color: white;
+}
+
+/* Footer icon hover - Dark Mode Style */
+.darkicons-fotter-bg:hover,
+.darkicons-fotter:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* Contact shape background */
+.contact__shape-1 {
+  position: absolute;
+  left: 15%;
+  top: 12%;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: linear-gradient(329deg, rgba(255, 145, 250, 0.1) 13.55%, rgba(250, 100, 144, 0.1) 48.54%, rgba(247, 216, 106, 0.1) 86.44%);
+}
+
+
+.hover-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
