@@ -6,7 +6,7 @@ import { useTheme } from "../../context/ThemeContext";
 import ThemeBtn from "../ThemeBtn";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
-import Resume from "../../assets/resume/Santhoshkumar.pdf";
+
 import Title from "../Title";
 import image1 from '../../assets/images/main.png';
 
@@ -66,7 +66,7 @@ I'm a passionate web developer with experience in WordPress, HTML, CSS, JavaScri
 
             <div className="flex flex-col gap-4 md:flex-row md:items-center mt-1">
               <a
-                href={Resume}
+                href="/resume/SANTHOSHKUMAR.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
