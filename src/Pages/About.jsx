@@ -14,11 +14,12 @@ const info = [
   {
     name: "🚀 Front-End Development",
     image: img1,
-    data: [
-      "Proficient in JavaScript, with practical experience in React and Tailwind CSS for dynamic and scalable UI development.",
-      "Strong foundation in HTML, CSS, and Bootstrap, ensuring responsive and accessible web design across all devices.",
-      "Skilled at creating clean, maintainable, and reusable components that align with best practices.",
-    ],
+    data:[
+  "Proficient in JavaScript and TypeScript, with hands-on experience in React.js, Tailwind CSS, and Vite for building fast, scalable, and modern web applications.",
+  "Strong foundation in HTML, CSS, and Bootstrap, ensuring responsive and accessible web design across all devices.",
+  "Skilled at creating clean, maintainable, and reusable components that align with industry best practices and modern development standards."
+]
+,
   },
   {
     name: "🎨 UI/UX & Design Implementation",
@@ -32,18 +33,21 @@ const info = [
     name: "🛠 Tools & Technologies",
     image: img3,
     data: [
-      "Comfortable working with: PHP (basic), MySQL databases.",
-      "Web hosting platforms like GoDaddy and cPanel.",
-      "FileZilla for FTP deployment and basic Linux server environments.",
-    ],
+  "Comfortable working with: PHP (basic), MySQL databases.",
+  "Experienced with web hosting platforms like GoDaddy and cPanel for live deployments.",
+  "Proficient in using GitHub for version control and deploying React apps to GitHub Pages and Vercel.",
+  "Familiar with FileZilla for FTP deployment and basic Linux server environments."
+]
+,
   },
   {
     name: "🌐 Deployment & Hosting",
     image: img4,
-    data: [
-      "Experienced in deploying React apps to GitHub Pages and cPanel.",
-      "Working knowledge of domain management and live production setups.",
-    ],
+    data:[
+  "Experienced in deploying React apps to GitHub Pages, Vercel, and cPanel.",
+  "Working knowledge of domain management, custom domains, and live production setups."
+]
+,
   },
 ];
 

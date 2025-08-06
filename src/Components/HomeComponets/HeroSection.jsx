@@ -60,11 +60,11 @@ function HeroSection() {
          mainTitle="Frontend & React Developer "
         />
 
-<p className="text-gray-600 max-w-md py-3">
-I'm a passionate web developer with experience in WordPress, HTML, CSS, JavaScript, Bootstrap, and React. I love building responsive and modern websites that deliver great user experiences.
+<p className="text-gray-600 max-w-md py-2 text-justify">
+  I'm a React.js front-end developer skilled in building fast, responsive apps using React, Tailwind CSS, TypeScript, and Vite. I deploy projects via Vercel, GitHub Pages, and cPanel, and have experience with Node.js, WordPress, PHP, and MySQL.
 </p>
 
-            <div className="flex flex-col gap-4 md:flex-row md:items-center mt-1">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center mt-0">
               <a
                 href="/resume/SANTHOSHKUMAR.pdf"
                 download

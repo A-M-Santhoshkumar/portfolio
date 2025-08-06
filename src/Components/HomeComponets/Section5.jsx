@@ -9,25 +9,34 @@ import {
   FaBootstrap,
   FaElementor,
   FaWordpress,
+  FaGithub,
 } from "react-icons/fa";
 import { IoLogoHtml5 } from "react-icons/io";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { TbSeo } from "react-icons/tb";
+import { RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
+import { TbSeo, TbBrandRedux } from "react-icons/tb";
 import { GrDomain } from "react-icons/gr";
+import { SiTypescript, SiPhp, SiMysql } from "react-icons/si";
 
 import Title from "../Title";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const data = [
-  { skillName: "Javascript", icons: FaJs, color: "#F7DF1E" },
   { skillName: "React Js", icons: FaReact, color: "#61DBFB" },
+  { skillName: "Redux ", icons: TbBrandRedux, color: "#764abc" },
+  { skillName: "Javascript", icons: FaJs, color: "#F7DF1E" },
+  { skillName: "TypeScript", icons: SiTypescript, color: "#007acc" },
+  { skillName: "Tailwind CSS", icons: RiTailwindCssFill, color: "#38bdf8" },
   { skillName: "HTML", icons: IoLogoHtml5, color: "#E34C26" },
   { skillName: "CSS", icons: FaCss3Alt, color: "#264de4" },
-  { skillName: "Tailwind CSS", icons: RiTailwindCssFill, color: "#38bdf8" },
   { skillName: "Bootstrap", icons: FaBootstrap, color: "#7952B3" },
+  { skillName: "PHP", icons: SiPhp, color: "#8892BF" },
+  { skillName: "MySql", icons: SiMysql, color: "#00749C" },
   { skillName: "SEO", icons: TbSeo, color: "#00A859" },
   { skillName: "Domain and Hosting", icons: GrDomain, color: "#6366F1" },
+  { skillName: "WordPress ", icons: FaWordpress, color: "#00749C" },
+  { skillName: "Vercel ", icons: RiVercelFill, color: "#000" },
+  { skillName: "Git and Github", icons: FaGithub, color: "#000" },
 ];
 
 const project = [
@@ -45,6 +54,8 @@ const project = [
     icons: [
       { icon: FaReact, color: "#61DBFB" },
       { icon: RiTailwindCssFill, color: "#38bdf8" },
+      { icon: TbBrandRedux, color: "#764abc" },
+      { icon: SiTypescript, color: "#007acc" },
     ],
   },
   {
@@ -53,13 +64,24 @@ const project = [
   },
   {
     skillName: "Domain and Hosting",
-    icons: [{ icon: GrDomain, color: "#6366F1" }],
+    icons: [
+      { icon: GrDomain, color: "#6366F1" },
+      { icon: RiVercelFill, color: "#000" },
+      { icon: FaGithub, color: "#000" },
+    ],
   },
   {
     skillName: "Wordpress",
     icons: [
-      { icon: FaWordpress, color: "#00749c" },
+      { icon: FaWordpress, color: "#00749C" },
       { icon: FaElementor, color: "#FF7BE5" },
+    ],
+  },
+  {
+    skillName: "Back End",
+    icons: [
+      { icon: SiPhp, color: "#8892BF" },
+      { icon: SiMysql, color: "#00749C" },
     ],
   },
 ];
@@ -70,34 +92,36 @@ function Section5() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(servicesRef.current, { y: "100%" }); // start off-screen
-
-      gsap.to(servicesRef.current, {
-        y: "0%",
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top top",
-          end: "+=1000", // how much to scroll
-          scrub: true,
-          pin: true,
-        },
-      });
+      gsap.fromTo(
+        servicesRef.current,
+        { y: 100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: servicesRef.current,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
     }, containerRef);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section className="container layout-wrapper">
-    <div className="relative h-screen" ref={containerRef}>
-        {/* Skills Background Layer */}
-      <div className="absolute inset-0 bg-gray-50 dark:bg-[#0e0e0e] z-0 px-4 py-4 overflow-hidden">
+    <section ref={containerRef} className="container">
+      {/* Skills Background Layer */}
+      <div className="relative min-h-screen bg-gray-50 dark:bg-[#0e0e0e] z-0 py-10">
         <Title
           smallTitle="My Technical Background"
           mainTitle="Development Experience"
           isWhite={false}
         />
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
           {data.map((item, index) => {
             const Icon = item.icons;
@@ -122,20 +146,18 @@ function Section5() {
         </div>
       </div>
 
-      {/* Services Overlay Section */}
+      {/* Services Section (no absolute, scrolls normally) */}
       <div
         ref={servicesRef}
-        className="container absolute top-0 left-0 w-full h-full  bg-white dark:bg-[#111] 
-       py-0 md:px-4 md:py-24 z-10"
+        className="w-full bg-white dark:bg-[#111] py-10 md:px-4"
       >
-      <Title
-  smallTitle="Services"
-  mainTitle="What I Offer"
-  isWhite={false}
- 
-/>
+        <Title
+          smallTitle="Services"
+          mainTitle="What I Offer"
+          isWhite={false}
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 py-0 md:gap-6 md:py-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {project.map((item, index) => (
             <div
               key={index}
@@ -150,7 +172,7 @@ function Section5() {
                   return (
                     <div
                       key={idx}
-                      className=" p-1 md:p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:scale-125 transition-transform"
+                      className="p-1 md:p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:scale-125 transition-transform"
                     >
                       <Icon size={28} style={{ color: iconItem.color }} />
                     </div>
@@ -161,7 +183,6 @@ function Section5() {
           ))}
         </div>
       </div>
-    </div>
     </section>
   );
 }
