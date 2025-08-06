@@ -65,7 +65,7 @@ function Footer(){
          </div>
          <div>
          <div className="justify-between flex flex-col-reverse md:flex-row items-center">
-              <p className="text-center"> Copyright © {new Date().getFullYear()} Santhosh. All Rights Reserved.</p>
+              <p className="text-center"> Copyright © {new Date().getFullYear()} Sitedesign. All Rights Reserved.</p>
 
               <div className="flex gap-3 py-4">
                 {
