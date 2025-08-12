@@ -13,6 +13,7 @@ import image3 from '../../assets/images/Project/dental.png'
 import image4 from '../../assets/images/Project/bt_componey.png'
 import image5 from '../../assets/images/Project/velan.png'
 import image6 from '../../assets/images/Project/astro.png'
+import image7 from '../../assets/images/Project/ecommerce.png'
 
 
 
@@ -21,6 +22,7 @@ function Section4(){
     const projectData = [
     {nameComponey:"Business Tamizha News Blog",details:"PHP Full Stack",link:"https://businesstamizha.com/",img:image1},
     {nameComponey:"Astro Tamizha",details:"PHP Full Stack",link:"https://astrotamizha.com/",img:image6},
+     {nameComponey:"React Ecommerce",details:"React",link:"https://sitedesign-ecommerce.vercel.app/",img:image7},
     {nameComponey:"JKKN DENTAL COLLEGE & HOSPITAL",details:"Wordpress",link:"https://dental.jkkn.ac.in/",img:image3},
     {nameComponey:"Business Tamizha",details:"PHP Full Stack",link:"https://businesstamizha.in/",img:image4},
     {nameComponey:"Velanmedias",details:"Frontend",link:"https://velanmedias.com/",img:image5},

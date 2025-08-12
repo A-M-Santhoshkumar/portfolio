@@ -11,6 +11,11 @@ import image6 from '../assets/images/Project/astro.png';
 import image7 from '../assets/images/Project/business_tamizha_news_blog.png';
 import image8 from '../assets/images/Project/bt_componey.png';
 import image9 from '../assets/images/Project/automindinfotech.png';
+import image10 from '../assets/images/Project/ecommerce.png';
+import image11 from '../assets/images/Project/spotify_clone.png';
+import image12 from '../assets/images/Project/react_portfolio.png';
+
+
 
 const Projects = () => {
   const data = [
@@ -23,6 +28,10 @@ const Projects = () => {
     { id: 7, name: "Business Tamizha News Blog", tool: "Php", link: "https://businesstamizha.com/", img: image7 },
     { id: 8, name: "Business Tamizha", tool: "Php", link: "https://businesstamizha.in/", img: image8 },
     { id: 9, name: "Automind Infotech", tool: "Html", link: "https://automindinfotech.com/", img: image9 },
+    { id: 10, name: "React Ecommerce", tool: "React", link: "https://sitedesign-ecommerce.vercel.app/", img: image10},
+      { id: 11, name: "Spotify Clone", tool: "React", link: "https://saitify-spotify-clone.vercel.app/", img: image11},
+        { id: 12, name: "React portfolio", tool: "React", link: "https://www.sitedesign.in/projects", img: image12},
+  
   ];
 
   const renderProjects = (tool) =>
@@ -63,6 +72,9 @@ const Projects = () => {
 
       <Title smallTitle="Tool" mainTitle="PHP & MySQL" mainTitleClass="font-medium" topSideAccess="mt-3 mb-10 text-center" />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">{renderProjects("Php")}</div>
+       
+        <Title smallTitle="Tool" mainTitle="React " mainTitleClass="font-medium" topSideAccess="py-16 text-center" />
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">{renderProjects("React")}</div>
 
       <Title smallTitle="Tool" mainTitle="WordPress" mainTitleClass="font-medium" topSideAccess="py-16 text-center" />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">{renderProjects("Wordpress")}</div>
