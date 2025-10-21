@@ -90,7 +90,7 @@ function LastContact() {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className="border p-2 rounded-md w-full text-black"
+              className="border p-2 rounded-md w-full text-black dark:text-black"
               required
             />
             <input
@@ -99,7 +99,7 @@ function LastContact() {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="border p-2 rounded-md w-full text-black"
+              className="border p-2 rounded-md w-full text-black dark:text-black"
               required
             />
             <input
@@ -108,7 +108,7 @@ function LastContact() {
               placeholder="Phone Number"
               value={formData.phone}
               onChange={handleChange}
-              className="border p-2 rounded-md w-full text-black"
+              className="border p-2 rounded-md w-full text-black dark:text-black"
               required
             />
             <input
@@ -117,14 +117,14 @@ function LastContact() {
               placeholder="City"
               value={formData.city}
               onChange={handleChange}
-              className="border p-2 rounded-md w-full text-black"
+              className="border p-2 rounded-md w-full text-black dark:text-black" 
             />
             <textarea
               name="message"
               placeholder="Message"
               value={formData.message}
               onChange={handleChange}
-              className="border p-2 rounded-md w-full text-black"
+              className="border p-2 rounded-md w-full text-black dark:text-black"
               rows="4"
               required
             ></textarea>
