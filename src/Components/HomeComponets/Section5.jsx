@@ -16,6 +16,11 @@ import { RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
 import { TbSeo, TbBrandRedux } from "react-icons/tb";
 import { GrDomain } from "react-icons/gr";
 import { SiTypescript, SiPhp, SiMysql } from "react-icons/si";
+import { SiGodaddy } from "react-icons/si";
+import { RiNodejsLine } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+
+
 
 import Title from "../Title";
 
@@ -37,6 +42,9 @@ const data = [
   { skillName: "WordPress ", icons: FaWordpress, color: "#00749C" },
   { skillName: "Vercel ", icons: RiVercelFill, color: "#000" },
   { skillName: "Git and Github", icons: FaGithub, color: "#000" },
+  { skillName: "Godaddy", icons: SiGodaddy, color: "#1bdbdb" },
+  { skillName: "Node", icons: RiNodejsLine, color: "#84bf08" },
+   { skillName: "Mongodb", icons: SiMongodb, color: "#08ee69" },
 ];
 
 const project = [
@@ -65,9 +73,11 @@ const project = [
   {
     skillName: "Domain and Hosting",
     icons: [
+      { icon: SiGodaddy, color: "#1bdbdb" },
       { icon: GrDomain, color: "#6366F1" },
       { icon: RiVercelFill, color: "#000" },
       { icon: FaGithub, color: "#000" },
+      
     ],
   },
   {

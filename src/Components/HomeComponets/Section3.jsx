@@ -7,6 +7,7 @@ import { TbWorldWww } from "react-icons/tb";
 import { RiSeoLine } from "react-icons/ri";
 
 import bgimg from "../../assets/images/section3.webp";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,7 @@ function Section3() {
   const project = [
     {
       name: "Website design",
-      link: "",
+      link: "/projects",
       about: "",
       icons: CgWebsite,
       bgicon: bgimg,
@@ -24,7 +25,7 @@ function Section3() {
     },
     {
       name: "Hosting and Domain",
-      link: "",
+      link: "/projects",
       about: "",
       icons: TbWorldWww,
       bgicon: bgimg,
@@ -32,7 +33,7 @@ function Section3() {
     },
     {
       name: "SEO",
-      link: "",
+      link: "/projects",
       about: "",
       icons: RiSeoLine,
       bgicon: bgimg,
@@ -70,7 +71,7 @@ function Section3() {
               {/* Background animation div */}
               <div className="absolute inset-0 animation-bg-move -z-10 rounded-lg"></div>
 
-              {/* Card content */}
+              {/* Card content */}<Link to={item.link}>
               <div className="p-5 border-slate-900 border-2 border-solid w-full h-auto bg-white 
                             transition-transform duration-200 transform group-hover:translate-x-2 
                             group-hover:translate-y-2 rounded-lg ">
@@ -88,6 +89,7 @@ function Section3() {
                 <p>{item.projectCount}</p>
                 <h2 className="text-3xl font-medium dark:text-black">{item.name}</h2>
               </div>
+               </Link>
             </div>
           );
         })}
