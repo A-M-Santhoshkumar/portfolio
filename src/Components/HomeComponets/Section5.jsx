@@ -125,7 +125,7 @@ function Section5() {
   return (
     <section ref={containerRef} className="container dark:bg-[#0e0e0e] ">
       {/* Skills Background Layer */}
-      <div className="relative min-h-screen  z-0 py-10">
+      <div className="relative min-h-screen  z-0 py-10 ">
         <Title
           smallTitle="My Technical Background"
           mainTitle="Development Experience"

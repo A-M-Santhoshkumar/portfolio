@@ -40,12 +40,12 @@ function HeroSection() {
   return (
 
     
-     <section>
+     <section className="layout-wrapper">
 
   
 
 
-    <div className="container mx-auto layout-wrapper">
+    <div className="container mx-auto ">
       <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
         {/* Left column */}
      <motion.div

@@ -75,6 +75,7 @@ return(
       0: { slidesPerView: 1 },
       640: { slidesPerView: 2 },
       1024: { slidesPerView: 3 },
+      1440: { slidesPerView: 4 },
     }}
   >
     {projectData.map((item, index) => (

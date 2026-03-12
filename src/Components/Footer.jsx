@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import Logo from '../assets/images/logo.png'
+import Logo from '../assets/images/logo-footer.png';
 
 function Footer(){
     
