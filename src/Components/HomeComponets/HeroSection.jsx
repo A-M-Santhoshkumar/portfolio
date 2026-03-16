@@ -57,7 +57,7 @@ function HeroSection() {
           >
 <h1 className="text-xl md:text-3xl font-bold">Freelance Digital Marketer & Website Designer in Coimbatore</h1>
 
-<h2  className="text-xl md:text-2xl py-2  font-bold">Google Ads Services in Coimbatore</h2>
+
 
 
 <p className="text-gray-600 max-w-2xl py-2 text-justify">
