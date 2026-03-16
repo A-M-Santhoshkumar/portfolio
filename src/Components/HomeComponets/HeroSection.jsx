@@ -55,15 +55,14 @@ function HeroSection() {
             animate={controls}
             className="w-full md:w-1/2 text-center md:text-left"
           >
-                <Title 
-         smallTitle="Hy! I am SanthoshKumar A M"
-         mainTitle="Frontend & React Developer "
-        />
+<h1 className="text-xl md:text-3xl font-bold">Freelance Digital Marketer & Website Designer in Coimbatore</h1>
 
-<p className="text-gray-600 max-w-md py-2 text-justify">
-  I'm a React.js front-end developer skilled in building fast, responsive apps using React, Tailwind CSS, TypeScript, and Vite. I deploy projects via Vercel, GitHub Pages, and cPanel, and have experience with Node.js, WordPress, PHP, and MySQL.
+<h2  className="text-xl md:text-2xl py-2  font-bold">Google Ads Services in Coimbatore</h2>
+
+
+<p className="text-gray-600 max-w-2xl py-2 text-justify">
+I’m Santhosh Kumar, a freelance digital marketer and website designer in Coimbatore helping businesses grow online through Google Ads, SEO, and modern website design. I create fast, responsive websites and run targeted ad campaigns that attract the right customers and increase business leads.
 </p>
-
             <div className="flex flex-col gap-4 md:flex-row md:items-center mt-0">
               <a
                 href="/resume/SANTHOSHKUMAR.pdf"

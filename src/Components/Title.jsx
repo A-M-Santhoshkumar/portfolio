@@ -4,18 +4,32 @@ function Title({
   smallTitleClass = "",
   mainTitleClass = "",
   topSideAccess = "",
-  isWhite = false
+  isWhite = false,
+  mainTag = "h2",   // h1, h2, h3 support
+  smallTag = "h4"
 }) {
   const textColor = isWhite ? "text-white" : "text-black";
 
+  const MainTag = mainTag;
+  const SmallTag = smallTag;
+
   return (
     <div className={`${topSideAccess}`}>
-      <h4 className={`dark:text-white text-sm md:text-xl font-medium before-hero-gradient py-2 ${smallTitleClass} ${textColor}`}>
-        {smallTitle}
-      </h4>
-      <h2 className={`dark:text-white text-3xl md:text-4xl font-bold font-syne ${mainTitleClass} ${textColor}`}>
+      
+      {smallTitle && (
+        <SmallTag
+          className={`dark:text-white text-sm md:text-lg font-medium py-2 ${smallTitleClass} ${textColor}`}
+        >
+          {smallTitle}
+        </SmallTag>
+      )}
+
+      <MainTag
+        className={`dark:text-white text-2xl md:text-4xl font-bold font-syne leading-snug ${mainTitleClass} ${textColor}`}
+      >
         {mainTitle}
-      </h2>
+      </MainTag>
+
     </div>
   );
 }

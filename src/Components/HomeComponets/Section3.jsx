@@ -16,7 +16,7 @@ function Section3() {
 
   const project = [
     {
-      name: "Website design",
+      name: "Digital Marketing",
       link: "/projects",
       about: "",
       icons: CgWebsite,
@@ -24,7 +24,7 @@ function Section3() {
       projectCount: "28 Project",
     },
     {
-      name: "Hosting and Domain",
+      name: "Website Design",
       link: "/projects",
       about: "",
       icons: TbWorldWww,
@@ -32,7 +32,7 @@ function Section3() {
       projectCount: "17 Project",
     },
     {
-      name: "SEO",
+      name: "Social Media Marketing",
       link: "/projects",
       about: "",
       icons: RiSeoLine,
