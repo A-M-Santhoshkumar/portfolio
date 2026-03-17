@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+Disallow: /assets/*.png$
+Disallow: /assets/*.jpg$
+
 Sitemap: https://www.sitedesign.in/sitemap.xml
