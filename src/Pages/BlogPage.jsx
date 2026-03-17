@@ -3,7 +3,6 @@ import { blogData } from "../data/blogData";
 import { Helmet } from "react-helmet-async";
 
 function BlogPage() {
-
   const { slug } = useParams();
 
   const blog = blogData.find((item) => item.slug === slug);
@@ -16,13 +15,62 @@ function BlogPage() {
     );
   }
 
+  const url = `https://www.sitedesign.in/blog/${blog.slug}`;
+
   return (
     <>
+      {/* ✅ SEO START */}
       <Helmet>
+        {/* Basic SEO */}
         <title>{blog.title} | SiteDesign</title>
         <meta name="description" content={blog.description} />
         <meta name="keywords" content={blog.keywords} />
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={url} />
+
+        {/* Open Graph (Facebook, WhatsApp) */}
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:description" content={blog.description} />
+        <meta property="og:image" content={blog.image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={blog.title} />
+        <meta name="twitter:description" content={blog.description} />
+        <meta name="twitter:image" content={blog.image} />
+
+        {/* Article Structured Data (VERY IMPORTANT 🔥) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: blog.title,
+            description: blog.description,
+            image: blog.image,
+            author: {
+              "@type": "Person",
+              name: "Santhosh Kumar"
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "SiteDesign",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.sitedesign.in/logo.png"
+              }
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": url
+            }
+          })}
+        </script>
       </Helmet>
+      {/* ✅ SEO END */}
 
       <section className="py-12 bg-white dark:bg-black transition-colors duration-300">
         <div className="container mx-auto px-4">
@@ -46,7 +94,6 @@ function BlogPage() {
 
           {/* Blog Sections */}
           <div className="grid md:grid-cols-2 gap-8">
-
             {blog.sections.map((section, index) => (
               <div
                 key={index}
@@ -61,7 +108,6 @@ function BlogPage() {
                 </p>
               </div>
             ))}
-
           </div>
 
         </div>
