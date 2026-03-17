@@ -60,10 +60,10 @@ function HeroSection() {
 
 
 
-<p className="text-gray-600 max-w-2xl py-2 text-justify">
+<p className="text-gray-600 max-w-2xl py-3 text-justify">
 I’m Santhosh Kumar, a freelance digital marketer and website designer in Coimbatore helping businesses grow online through Google Ads, SEO, and modern website design. I create fast, responsive websites and run targeted ad campaigns that attract the right customers and increase business leads.
 </p>
-            <div className="flex flex-col gap-4 md:flex-row md:items-center mt-0">
+            {/* <div className="flex flex-col gap-4 md:flex-row md:items-center mt-0">
               <a
                 href="/resume/SANTHOSHKUMAR.pdf"
                 download
@@ -75,7 +75,7 @@ I’m Santhosh Kumar, a freelance digital marketer and website designer in Coimb
                 </ThemeBtn>
               </a>
 
-            </div>
+            </div> */}
 
             <div className="flex flex-col md:flex-row gap-3 py-6 items-center">
               <h5>Check out my:</h5>

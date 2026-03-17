@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://www.sitedesign.in/</loc>
-</url>
+  <!-- Main Pages -->
+  <url>
+    <loc>https://www.sitedesign.in/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-<loc>https://www.sitedesign.in/website-design-coimbatore</loc>
-</url>
+  <url>
+    <loc>https://www.sitedesign.in/about</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://www.sitedesign.in/google-ads-coimbatore</loc>
-</url>
+  <url>
+    <loc>https://www.sitedesign.in/projects</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://www.sitedesign.in/meta-ads-coimbatore</loc>
-</url>
+  <url>
+    <loc>https://www.sitedesign.in/contact</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://www.sitedesign.in/blog/website-design-coimbatore</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sitedesign.in/blog/meta-ads-coimbatore</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sitedesign.in/blog/google-ads-coimbatore</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
